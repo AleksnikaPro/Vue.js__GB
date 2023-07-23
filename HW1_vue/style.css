@@ -1,5 +1,5 @@
 .btn {
-	display: inline-block;	
+	display: inline-block;
 	box-sizing: border-box;
 	padding: 0 25px;
 	margin: 0 15px 15px 0;
@@ -17,7 +17,7 @@
 	cursor: pointer;
 	user-select: none;
 	appearance: none;
-	touch-action: manipulation;  
+	touch-action: manipulation;
 	vertical-align: top;
 	transition: box-shadow 0.2s;
 }
