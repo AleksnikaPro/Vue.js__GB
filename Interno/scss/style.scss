@@ -130,9 +130,6 @@ body {
             border: 1px solid $darkColorOfSite;
             @include transition-slow();
         }
-        &:hover path {
-            fill: $mainColorOfSite;
-        }
         &:focus {
             outline: none !important;
             fill: $mainColorOfSite;
@@ -255,17 +252,19 @@ body {
         @include transition-slow();
         padding: 0;
 
-        &:hover {
-            background-color: #CDA274;
+        &:hover{
+            background-color: #FFFFFF;
+            border: 1px solid #E7E7E7;
             @include transition-slow();
-
         }
         &:active {
             background-color: #4D5053;
+            border: none;
             @include transition-slow();
         }
         &:focus {
             background-color: #CDA274;
+            border: none;
             @include transition-slow();
         }
     }
@@ -387,10 +386,18 @@ body {
         box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
         justify-content: center;
         align-items: center;
+        @include transition-fast();
+
+        &:hover {
+            background-color: #F4F0EC;
+            @include transition-slow();
+        }
+        &:hover .item-content__button{
+            background-color: #FFFFFF;
+            @include transition-slow();
+        }
     }
-    &__item:nth-child(2) {
-        background-color: #F4F0EC;
-    }
+  
     &__item-image {
         display: flex;
         width: 100%;
@@ -469,14 +476,9 @@ body {
         border-radius: 50%;
         background-color: #F4F0EC;
         cursor: pointer;
-        @include transition-slow();
         padding: 0;
-
-        &:hover {
-            background-color: #CDA274;
-            @include transition-slow();
-
-        }
+        @include transition-slow();
+      
         &:active {
             background-color: #4D5053;
             @include transition-slow();
@@ -487,10 +489,6 @@ body {
         }
 
     }
-    // ????????????почему не работает?????
-    // &__button:nth-child(2) {
-    //     background-color: #FFFFFF;
-    // }
 }
 
 //_____________________________________________

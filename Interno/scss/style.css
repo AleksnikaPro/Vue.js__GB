@@ -435,12 +435,15 @@ summary::-webkit-details-marker {
   box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease-out;
 }
-.news__item:nth-child(2) {
+.news__item:hover {
   background-color: #F4F0EC;
+  transition: all 0.8s ease-out;
 }
-.news__item:nth-child(2) {
-  background-color: #F4F0EC;
+.news__item:hover .item-content__button {
+  background-color: #FFFFFF;
+  transition: all 0.8s ease-out;
 }
 .news__item-image {
   display: flex;
@@ -553,11 +556,7 @@ summary::-webkit-details-marker {
   border-radius: 50%;
   background-color: #F4F0EC;
   cursor: pointer;
-  transition: all 0.8s ease-out;
   padding: 0;
-}
-.item-content__button:hover {
-  background-color: #CDA274;
   transition: all 0.8s ease-out;
 }
 .item-content__button:active {
@@ -663,15 +662,18 @@ summary::-webkit-details-marker {
   padding: 0;
 }
 .post__button:hover {
-  background-color: #CDA274;
+  background-color: #FFFFFF;
+  border: 1px solid #E7E7E7;
   transition: all 0.8s ease-out;
 }
 .post__button:active {
   background-color: #4D5053;
+  border: none;
   transition: all 0.8s ease-out;
 }
 .post__button:focus {
   background-color: #CDA274;
+  border: none;
   transition: all 0.8s ease-out;
 }
 .post__button:nth-child(1) {
@@ -799,9 +801,6 @@ body {
   border: 1px solid #292F36;
   transition: all 0.8s ease-out;
 }
-.banner__button:hover path {
-  fill: #FFFFFF;
-}
 .banner__button:focus {
   outline: none !important;
   fill: #FFFFFF;
@@ -918,15 +917,18 @@ body {
   padding: 0;
 }
 .project__item-button:hover {
-  background-color: #CDA274;
+  background-color: #FFFFFF;
+  border: 1px solid #E7E7E7;
   transition: all 0.8s ease-out;
 }
 .project__item-button:active {
   background-color: #4D5053;
+  border: none;
   transition: all 0.8s ease-out;
 }
 .project__item-button:focus {
   background-color: #CDA274;
+  border: none;
   transition: all 0.8s ease-out;
 }
 
@@ -1041,9 +1043,15 @@ body {
   box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease-out;
 }
-.blog__item:nth-child(2) {
+.blog__item:hover {
   background-color: #F4F0EC;
+  transition: all 0.8s ease-out;
+}
+.blog__item:hover .item-content__button {
+  background-color: #FFFFFF;
+  transition: all 0.8s ease-out;
 }
 .blog__item-image {
   display: flex;
@@ -1123,11 +1131,7 @@ body {
   border-radius: 50%;
   background-color: #F4F0EC;
   cursor: pointer;
-  transition: all 0.8s ease-out;
   padding: 0;
-}
-.item-content__button:hover {
-  background-color: #CDA274;
   transition: all 0.8s ease-out;
 }
 .item-content__button:active {
