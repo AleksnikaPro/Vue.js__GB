@@ -684,7 +684,7 @@ summary::-webkit-details-marker {
   margin-bottom: 200px;
 }
 .top-banner__content {
-  background-image: url("../images/image_laceholder2.jpg");
+  background-image: url("../images/image_laceholder.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -782,11 +782,10 @@ summary::-webkit-details-marker {
 }
 
 .breadcrumbs__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin: 0;
-}
-.breadcrumbs__item {
-  display: inline-block;
-  align-items: center;
 }
 .breadcrumbs__item:not(:last-child)::after {
   content: "/";
@@ -848,7 +847,6 @@ summary::-webkit-details-marker {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 24px;
-  max-height: 200px;
 }
 .sidebar__heading {
   color: #292F36;
@@ -887,7 +885,8 @@ summary::-webkit-details-marker {
   transition: all 0.8s ease-out;
 }
 .sidebar__button:focus {
-  background-color: #CDA274;
+  color: #FFFFFF;
+  background-color: #292F36;
   transition: all 0.8s ease-out;
 }
 .sidebar__button_active {
