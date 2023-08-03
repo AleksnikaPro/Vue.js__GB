@@ -33,25 +33,17 @@ const articles = {
                 { id: "kitchen-planning", title: "Kitchen Planning" }
             ],
             currentButton: [{ id: "kitchen", title: "Kitchen" }],
-            buttonIsActive: false,
+            buttonIsActive: 'kitchen',
         };
     },
     methods: {
         changeArticle(id) {
             const buttonId = id;
-            this.listOfArticles.forEach(article => {
+            this.listOfArticles.forEach((article) => {
                 if (buttonId === article.id) {
                     this.currentArticle = [];
+                    this.buttonIsActive = id;
                     return this.currentArticle.push(article);
-                }
-            });
-        },
-        getCurrentButton(id) {
-            this.buttons.forEach(button => {
-                if (button.id === id) {
-                    this.currentButton = [];
-                    this.buttonIsActive = true;
-                    return this.currentButton.push(button);
                 }
             });
         },
@@ -122,23 +114,18 @@ const articles = {
                 <img class="article__image" :src="article.secondsrc" :alt="article.secondalt">
                 <p class="article__text">{{article.forthparagraph}}</p>
             </article>
-            <sidebar class="sidebar">
+            <aside class="sidebar">
                 <div class="sidebar__content">
                     <h3 class="sidebar__heading">{{sidebarTitle}}</h3>
                     <div class="sidebar__buttons-box">
-                        <button v-for="button in buttons" :key="button.id"
-                       @click="changeArticle(button.id)" class="sidebar__button" type="button"
-                        :class="{'sidebar__button_active': buttonIsActive === 'true'}"  @click="getCurrentButton(button.id)">{{button.title}}
-                       </button>
+                    <button v-for="button in buttons" :key="button.id"
+                    @click="changeArticle(button.id)" type="button"
+                     :class="['sidebar__button', button.id === buttonIsActive ? 'sidebar__button_active' : false]">{{button.title}}
+                    </button>
                     </div>
                 </div>
-            </sidebar>
+            </aside>
         </div>`,
 
 };
 Vue.createApp(articles).mount('#blog-details');
-
-
-
-
-

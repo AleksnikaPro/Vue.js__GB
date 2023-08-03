@@ -684,12 +684,13 @@ summary::-webkit-details-marker {
   margin-bottom: 200px;
 }
 .top-banner__content {
-  background-image: url("../images/image_laceholder.png");
+  background-image: url("../images/image_laceholder2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
+  min-height: 351px;
 }
 
 .blog-details {
