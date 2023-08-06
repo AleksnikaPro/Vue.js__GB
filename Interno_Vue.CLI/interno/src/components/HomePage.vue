@@ -99,16 +99,16 @@ export default {
         return {
             listOfProjects: [
                 {
-                    id: 'first-project', src: '../assets/images/project-photo1.png', alt: 'first project', firstparagraph: 'Modern Kitchan', secondparagraph: 'Decor / Artchitecture'
+                    id: 'first-project', src: require('@/assets/images/project-photo1.png'), alt: 'first project', firstparagraph: 'Modern Kitchan', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'second-project', src:'../assets/images/project-photo2.png', alt: 'second project', firstparagraph: 'Modern Kitchan', secondparagraph: 'Decor / Artchitecture'
+                    id: 'second-project', src: require('@/assets/images/project-photo2.png'), alt: 'second project', firstparagraph: 'Modern Kitchan', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'third-project', src: '../assets/images/project-photo3.png', alt: 'third project', firstparagraph: 'Modern Kitchan', secondparagraph: 'Decor / Artchitecture'
+                    id: 'third-project', src: require('@/assets/images/project-photo3.png'), alt: 'third project', firstparagraph: 'Modern Kitchan', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'fourth-project', src:'..assets/images/project-photo4.png', alt: 'fourth project', firstparagraph: 'Modern Kitchan', secondparagraph: 'Decor / Artchitecture'
+                    id: 'fourth-project', src: require('@/assets/images/project-photo4.png'), alt: 'fourth project', firstparagraph: 'Modern Kitchan', secondparagraph: 'Decor / Artchitecture'
                 }
             ],
             listOfCounters: [
@@ -127,13 +127,13 @@ export default {
             ],
             listOfBlogs: [
                 {
-                    id: 'first-blog', src:'..assets/images/blog-photo1.png', alt: 'first blog', tag: 'Kitchan Design', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022'
+                    id: 'first-blog', src: require('@/assets/images/blog-photo1.png'), alt: 'first blog', tag: 'Kitchan Design', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022'
                 },
                 {
-                    id: 'second-blog', src:'..assets/images/blog-photo2.png', alt: 'second blog', tag: 'Living Design', title: 'Low Cost Latest Invented Interior Designing Ideas', date: '22 December,2022'
+                    id: 'second-blog', src: require('@/assets/images/blog-photo2.png'), alt: 'second blog', tag: 'Living Design', title: 'Low Cost Latest Invented Interior Designing Ideas', date: '22 December,2022'
                 },
                 {
-                    id: 'third-blog', src:'..assets/images/blog-photo3.png', alt: 'third blog', tag: 'Interior Design', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022'
+                    id: 'third-blog', src: require('@/assets/images/blog-photo3.png'), alt: 'third blog', tag: 'Interior Design', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022'
                 }
             ]
         };
@@ -141,4 +141,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped src="../assets/scss/style.scss" ></style>
+<style></style>

@@ -7,7 +7,7 @@
             <nav class="header__navigation">
                 <ul class="header__navigation-list">
                     <li v-for="link in listOfLinks" :key="link.id" class="header__navigation-item">
-                        <a href="#" class="header__navigation-link"> {{ linkName }}</a>
+                        <a href="#" class="header__navigation-link"> {{ link.linkName }}</a>
                     </li>
                 </ul>
             </nav>
@@ -27,8 +27,7 @@ export default {
             ]
         };
     },
-
 };
 </script>
 
-<style lang="scss" scoped src="../assets/scss/style.scss" ></style>
+<style></style>

@@ -132,4 +132,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped src="../assets/scss/_blog.scss"></style>
+<style></style>

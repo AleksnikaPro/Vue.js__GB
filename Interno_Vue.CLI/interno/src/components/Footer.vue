@@ -26,7 +26,7 @@
                     <nav class="footer__item-navigation">
                         <ul class="footer__list">
                             <li v-for="link in listOfLinks" :key="link.id" class="footer__navigation-item">
-                                <a href="#" class="footer__navigation-link">{{ linkName }}</a>
+                                <a href="#" class="footer__navigation-link">{{ link.linkName }}</a>
                             </li>
                         </ul>
                     </nav>
@@ -57,15 +57,7 @@ export default {
             ]
         };
     },
-
-    mounted() {
-
-    },
-
-    methods: {
-
-    },
 };
 </script>
 
-<style lang="scss" scoped src="../assets/scss/style.scss" ></style>
+<style></style>
