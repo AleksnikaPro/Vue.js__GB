@@ -114,7 +114,6 @@ export default {
                 { id: "architecture", title: "Architecture" },
                 { id: "kitchen-planning", title: "Kitchen Planning" }
             ],
-            currentButton: [{ id: "kitchen", title: "Kitchen" }],
             buttonIsActive: 'kitchen',
         };
     },

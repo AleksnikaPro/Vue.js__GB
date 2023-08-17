@@ -1,9 +1,10 @@
 <template>
- <Header />
- <Footer />
+ <!-- <Header />
+ <Footer /> -->
  <HomePage />
  <BlogDetails />
  <Blog />
+ <Project />
 
 </template>
 
@@ -13,6 +14,7 @@ import Footer from './components/Footer.vue'
 import HomePage from './components/HomePage.vue'
 import BlogDetails from './components/BlogDetails.vue'
 import Blog from './components/Blog.vue'
+import Project from './components/Project.vue'
 
 export default {
   name: 'App',
@@ -21,11 +23,9 @@ export default {
     Footer,
     HomePage,
     BlogDetails,
-    Blog
+    Blog,
+    Project
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>
