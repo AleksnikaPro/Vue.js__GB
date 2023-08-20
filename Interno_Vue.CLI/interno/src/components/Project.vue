@@ -20,20 +20,20 @@
             <!-- categories -->
             <div class="categories">
                 <div class="categories__content">
-                    <button v-for="button in listOfButtons" :key="button.id"
-                    @click="changeProjectCategory(button.id)" type="button"
-                            :class="['categories__btn', button.id === buttonIsActive ? 'categories__btn_active' : false]"
-                    > {{ button.title }}</button>
+                    <button v-for="button in listOfButtons" :key="button.id" @click="changeProjectCategory(button.id)"
+                        type="button"
+                        :class="['categories__btn', button.id === buttonIsActive ? 'categories__btn_active' : false]"> {{
+                            button.title }}</button>
                 </div>
             </div>
             <!-- projects -->
             <div class="projects__items">
-                <div v-for="project in currentCategoryList" :key="project.id"
-                @click="addToFavoriteItems(project.id, event)"
-                class="projects__item">
+                <div v-for="project in currentCategoryList" :key="project.id" class="projects__item">
                     <div class="star-box">
-                        <svg :class="['star', project.id === starIsActive ? 'star_active' : false]"
-                         width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg @click="changeStarColor(e)" :class="['star', starIsActive ? 'star_active' : false]"
+                        :id="project.id"
+                            width="36"
+                            height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_d_993_156)">
                                 <path
                                     d="M16.0992 1.80951C16.7004 -0.0279021 19.2996 -0.0279021 19.9008 1.80951L21.7983 7.60879C22.0673 8.43084 22.8342 8.98685 23.6992 8.98685H29.8097C31.7506 8.98685 32.5539 11.4732 30.98 12.6088L26.0604 16.1581C25.3546 16.6674 25.0591 17.5748 25.3298 18.402L27.2146 24.1623C27.8166 26.0025 25.7137 27.539 24.1435 26.4062L19.1702 22.818C18.4715 22.3139 17.5285 22.3139 16.8298 22.818L11.8565 26.4062C10.2863 27.539 8.18335 26.0025 8.78545 24.1623L10.6702 18.402C10.9409 17.5748 10.6454 16.6674 9.93955 16.1581L5.02004 12.6088C3.44611 11.4732 4.24942 8.98685 6.19025 8.98685H12.3008C13.1658 8.98685 13.9327 8.43084 14.2017 7.60879L16.0992 1.80951Z"
@@ -98,7 +98,7 @@ export default {
     data() {
         return {
             currentCategoryList: [
-            {
+                {
                     id: 'bedroom 1', src: require('@/assets/images/projects_img1.png'), alt: 'bedroom one', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
@@ -235,7 +235,6 @@ export default {
                     id: 'livingroom', title: 'Living Area'
                 }
             ],
-            favoriteItems: [],
             buttonIsActive: 'bedroom',
             starIsActive: false,
         };
@@ -251,16 +250,18 @@ export default {
                 }
             });
         },
-        //доделать
-        // addToFavoriteItems(event){
-        //     this.allCategoriesList.forEach(category => {
-        //         if(event.target.closest("projects__item")){
-        //             favoriteItems.push(category.src);
-        //         }
-        //     });
-        // }
-    },
-};
+        changeStarColor(e) {
+            const allProjects = document.querySelectorAll('.projects__item');
+            const target = e.target.closest('.star');
+            allProjects.forEach(project => {
+                if (target.id === project.id) {
+                    return this.starIsActive = !this.starIsActive;
+                }
+            });
+        }
+    }
+}
+
 </script>
 
 <style></style>
