@@ -22,15 +22,15 @@
                 <div class="categories__content">
                     <button v-for="button in listOfButtons" :key="button.id" @click="changeProjectCategory(button.id)"
                         type="button"
-                        :class="['categories__btn', button.id === buttonIsActive ? 'categories__btn_active' : false]"> {{
-                            button.title }}</button>
+                        :class="['categories__btn', button.id === buttonIsActive ? 'categories__btn_active' : false]"> {{ button.title }}</button>
                 </div>
             </div>
             <!-- projects -->
             <div class="projects__items">
                 <div v-for="project in currentCategoryList" :key="project.id" class="projects__item">
                     <div class="star-box">
-                        <svg @click="changeStarColor(e)" :class="['star', starIsActive ? 'star_active' : false]"
+                        <svg @click="changeStarColor"
+                        :class="['star', starIsActive ? 'star_active' : false]"
                         :id="project.id"
                             width="36"
                             height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,126 +99,126 @@ export default {
         return {
             currentCategoryList: [
                 {
-                    id: 'bedroom 1', src: require('@/assets/images/projects_img1.png'), alt: 'bedroom one', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '1', src: require('@/assets/images/projects_img1.png'), alt: 'bedroom one', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 2', src: require('@/assets/images/projects_img2.png'), alt: 'bedroom two', firstparagraph: 'Classic Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '2', src: require('@/assets/images/projects_img2.png'), alt: 'bedroom two', firstparagraph: 'Classic Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 3', src: require('@/assets/images/projects_img3.png'), alt: 'bedroom three', firstparagraph: 'Minimal Bedroom Table', secondparagraph: 'Decor / Artchitecture'
+                    id: '3', src: require('@/assets/images/projects_img3.png'), alt: 'bedroom three', firstparagraph: 'Minimal Bedroom Table', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 4', src: require('@/assets/images/projects_img4.png'), alt: 'bedroom four', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '4', src: require('@/assets/images/projects_img4.png'), alt: 'bedroom four', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 5', src: require('@/assets/images/projects_img5.png'), alt: 'bedroom five', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '5', src: require('@/assets/images/projects_img5.png'), alt: 'bedroom five', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 6', src: require('@/assets/images/projects_img6.png'), alt: 'bedroom six', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '6', src: require('@/assets/images/projects_img6.png'), alt: 'bedroom six', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 7', src: require('@/assets/images/projects_img7.png'), alt: 'bedroom seven', firstparagraph: 'System Bedroom Table', secondparagraph: 'Decor / Artchitecture'
+                    id: '7', src: require('@/assets/images/projects_img7.png'), alt: 'bedroom seven', firstparagraph: 'System Bedroom Table', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 8', src: require('@/assets/images/projects_img8.png'), alt: 'bedroom eight', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '8', src: require('@/assets/images/projects_img8.png'), alt: 'bedroom eight', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
                 }
             ],
             allCategoriesList: [
                 {
-                    id: 'bedroom 1', src: require('@/assets/images/projects_img1.png'), alt: 'bedroom one', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '1', src: require('@/assets/images/projects_img1.png'), alt: 'bedroom one', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 2', src: require('@/assets/images/projects_img2.png'), alt: 'bedroom two', firstparagraph: 'Classic Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '2', src: require('@/assets/images/projects_img2.png'), alt: 'bedroom two', firstparagraph: 'Classic Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 3', src: require('@/assets/images/projects_img3.png'), alt: 'bedroom three', firstparagraph: 'Minimal Bedroom Table', secondparagraph: 'Decor / Artchitecture'
+                    id: '3', src: require('@/assets/images/projects_img3.png'), alt: 'bedroom three', firstparagraph: 'Minimal Bedroom Table', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 4', src: require('@/assets/images/projects_img4.png'), alt: 'bedroom four', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '4', src: require('@/assets/images/projects_img4.png'), alt: 'bedroom four', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 5', src: require('@/assets/images/projects_img5.png'), alt: 'bedroom five', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '5', src: require('@/assets/images/projects_img5.png'), alt: 'bedroom five', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 6', src: require('@/assets/images/projects_img6.png'), alt: 'bedroom six', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '6', src: require('@/assets/images/projects_img6.png'), alt: 'bedroom six', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 7', src: require('@/assets/images/projects_img7.png'), alt: 'bedroom seven', firstparagraph: 'System Bedroom Table', secondparagraph: 'Decor / Artchitecture'
+                    id: '7', src: require('@/assets/images/projects_img7.png'), alt: 'bedroom seven', firstparagraph: 'System Bedroom Table', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bedroom 8', src: require('@/assets/images/projects_img8.png'), alt: 'bedroom eight', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '8', src: require('@/assets/images/projects_img8.png'), alt: 'bedroom eight', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bathroom 1', src: require('@/assets/images/projects_bathroom1.png'), alt: 'bathroom one', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '9', src: require('@/assets/images/projects_bathroom1.png'), alt: 'bathroom one', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bathroom 2', src: require('@/assets/images/projects_bathroom2.png'), alt: 'bathroom two', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '10', src: require('@/assets/images/projects_bathroom2.png'), alt: 'bathroom two', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bathroom 3', src: require('@/assets/images/projects_bathroom3.png'), alt: 'bathroom three', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '11', src: require('@/assets/images/projects_bathroom3.png'), alt: 'bathroom three', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bathroom 4', src: require('@/assets/images/projects_bathroom4.png'), alt: 'bathroom four', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '12', src: require('@/assets/images/projects_bathroom4.png'), alt: 'bathroom four', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bathroom 5', src: require('@/assets/images/projects_bathroom5.png'), alt: 'bathroom five', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '13', src: require('@/assets/images/projects_bathroom5.png'), alt: 'bathroom five', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bathroom 6', src: require('@/assets/images/projects_bathroom6.png'), alt: 'bathroom six', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '14', src: require('@/assets/images/projects_bathroom6.png'), alt: 'bathroom six', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bathroom 7', src: require('@/assets/images/projects_bathroom7.png'), alt: 'bathroom seven', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '15', src: require('@/assets/images/projects_bathroom7.png'), alt: 'bathroom seven', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'bathroom 8', src: require('@/assets/images/projects_bathroom8.png'), alt: 'bathroom eight', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '16', src: require('@/assets/images/projects_bathroom8.png'), alt: 'bathroom eight', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'kitchen 1', src: require('@/assets/images/projects_kitchen1.png'), alt: 'kitchen one', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
+                    id: '17', src: require('@/assets/images/projects_kitchen1.png'), alt: 'kitchen one', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'kitchen 2', src: require('@/assets/images/projects_kitchen2.png'), alt: 'kitchen two', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
+                    id: '18', src: require('@/assets/images/projects_kitchen2.png'), alt: 'kitchen two', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'kitchen 3', src: require('@/assets/images/projects_kitchen3.png'), alt: 'kitchen three', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
+                    id: '19', src: require('@/assets/images/projects_kitchen3.png'), alt: 'kitchen three', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'kitchen 4', src: require('@/assets/images/projects_kitchen4.png'), alt: 'kitchen four', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
+                    id: '20', src: require('@/assets/images/projects_kitchen4.png'), alt: 'kitchen four', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'kitchen 5', src: require('@/assets/images/projects_kitchen5.png'), alt: 'kitchen five', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
+                    id: '21', src: require('@/assets/images/projects_kitchen5.png'), alt: 'kitchen five', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'kitchen 6', src: require('@/assets/images/projects_kitchen6.png'), alt: 'kitchen six', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
+                    id: '22', src: require('@/assets/images/projects_kitchen6.png'), alt: 'kitchen six', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'kitchen 7', src: require('@/assets/images/projects_kitchen7.png'), alt: 'kitchen seven', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
+                    id: '23', src: require('@/assets/images/projects_kitchen7.png'), alt: 'kitchen seven', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'kitchen 8', src: require('@/assets/images/projects_kitchen8.png'), alt: 'kitchen eight', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
+                    id: '24', src: require('@/assets/images/projects_kitchen8.png'), alt: 'kitchen eight', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'livingroom 1', src: require('@/assets/images/projects_livingroom1.png'), alt: 'livingroom one', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '25', src: require('@/assets/images/projects_livingroom1.png'), alt: 'livingroom one', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'livingroom 2', src: require('@/assets/images/projects_livingroom2.png'), alt: 'livingroom two', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '26', src: require('@/assets/images/projects_livingroom2.png'), alt: 'livingroom two', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'livingroom 3', src: require('@/assets/images/projects_livingroom3.png'), alt: 'livingroom three', firstparagraph: 'Modern Livingroom 3', secondparagraph: 'Decor / Artchitecture'
+                    id: '27', src: require('@/assets/images/projects_livingroom3.png'), alt: 'livingroom three', firstparagraph: 'Modern Livingroom 3', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'livingroom 4', src: require('@/assets/images/projects_livingroom4.png'), alt: 'livingroom four', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '28', src: require('@/assets/images/projects_livingroom4.png'), alt: 'livingroom four', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'livingroom 5', src: require('@/assets/images/projects_livingroom5.png'), alt: 'livingroom five', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '29', src: require('@/assets/images/projects_livingroom5.png'), alt: 'livingroom five', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'livingroom 6', src: require('@/assets/images/projects_livingroom6.png'), alt: 'livingroom six', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '30', src: require('@/assets/images/projects_livingroom6.png'), alt: 'livingroom six', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'livingroom 7', src: require('@/assets/images/projects_livingroom7.png'), alt: 'livingroom seven', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '31', src: require('@/assets/images/projects_livingroom7.png'), alt: 'livingroom seven', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'livingroom 8', src: require('@/assets/images/projects_livingroom8.png'), alt: 'livingroom eight', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '32', src: require('@/assets/images/projects_livingroom8.png'), alt: 'livingroom eight', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'
                 }
             ],
             listOfButtons: [
@@ -251,14 +251,13 @@ export default {
             });
         },
         changeStarColor(e) {
-            const allProjects = document.querySelectorAll('.projects__item');
-            const target = e.target.closest('.star');
-            allProjects.forEach(project => {
-                if (target.id === project.id) {
+            const star = e.target.closest('.star');
+            this.allCategoriesList.forEach(project => {
+                if (star.id === project.id) {
                     return this.starIsActive = !this.starIsActive;
                 }
             });
-        }
+        },
     }
 }
 

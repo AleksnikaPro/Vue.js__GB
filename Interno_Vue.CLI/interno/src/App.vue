@@ -1,6 +1,6 @@
 <template>
- <!-- <Header />
- <Footer /> -->
+ <Header />
+ <Footer />
  <HomePage />
  <BlogDetails />
  <Blog />
