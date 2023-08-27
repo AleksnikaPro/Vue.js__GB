@@ -68,7 +68,7 @@
         &:hover {
             color: #CDA274;
             background: $mainColorOfSite;
-            border: 1px solid $darkColorOfSite;
+            border: 1px solid $secondPrimaryColor;
             @include transition-slow();
         }
         &:focus {
@@ -78,7 +78,7 @@
         &:active {
             color: #CDA274;
             background: $mainColorOfSite;
-            border: 1px solid $darkColorOfSite;
+            border: 1px solid $secondPrimaryColor;
             @include transition-fast();
         }
     }

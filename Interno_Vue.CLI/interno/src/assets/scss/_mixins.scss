@@ -5,14 +5,15 @@
 // }
 
 @mixin transition-fast(){
-    transition: all 0.5s ease-out; 
+    transition: all 0.5s ease-out;
 }
 
 @mixin transition-slow(){
     transition: all 0.8s ease-out;
 }
 
-@mixin font-jost-regular($size, $height){
+@mixin font-jost-regular($color, $size, $height){
+    color: $color;
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -20,7 +21,17 @@
     line-height: $height;
 }
 
-@mixin font-DMSerifDisplay-regular($size, $height){
+@mixin font-jost-semibold($color, $size, $height){
+    color: $color;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: $size;
+    line-height: $height;
+}
+
+@mixin font-DMSerifDisplay-regular($color, $size, $height){
+    color: $color;
     font-family: ' DM Serif Display', sans-serif;;
     font-weight: 400;
     font-style: normal;
@@ -28,7 +39,8 @@
     line-height: $height;
 }
 
-@mixin font-DMSerifDisplay-semibold($size, $height){
+@mixin font-DMSerifDisplay-semibold($color, $size, $height){
+    color: $color;
     font-family: ' DM Serif Display', sans-serif;;
     font-weight: 600;
     font-style: normal;

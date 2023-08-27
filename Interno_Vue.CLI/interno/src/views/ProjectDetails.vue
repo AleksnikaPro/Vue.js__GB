@@ -17,7 +17,7 @@
 <script>
 import { mapState } from 'vuex';
 
-import Slider from './Slider.vue'
+import Slider from '../components/Slider.vue'
 
 export default {
     name: 'ProjectDetails',
@@ -28,11 +28,9 @@ export default {
     computed: {
         ...mapState(['projectInfo', 'sliderPictures']),
     }
-
-
 }
 </script>
 
-<style></style>
+
 
 

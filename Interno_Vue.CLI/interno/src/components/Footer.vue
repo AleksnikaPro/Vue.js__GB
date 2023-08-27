@@ -23,13 +23,14 @@
                 </div>
                 <div class="footer__item">
                     <p class="footer__item-heading">Pages</p>
-                    <nav class="footer__item-navigation">
+                    <!-- <nav class="footer__item-navigation">
                         <ul class="footer__list">
                             <li v-for="link in listOfLinks" :key="link.id" class="footer__navigation-item">
                                 <a href="#" class="footer__navigation-link">{{ link.linkName }}</a>
                             </li>
                         </ul>
-                    </nav>
+                    </nav> -->
+                    <Navigation class="navigation"/>
                 </div>
                 <div class="footer__item">
                     <p class="footer__item-heading">Contact</p>
@@ -45,19 +46,56 @@
 </template>
 
 <script>
+import Navigation from './Navigation.vue';
+
 export default {
     name: 'Footer',
 
-    data() {
-        return {
-            listOfLinks: [
-                { id: "home", linkName: 'Home' },
-                { id: "project", linkName: 'Project' },
-                { id: "blog", linkName: 'Blog' },
-            ]
-        };
-    },
+    components: {
+        Navigation
+    }
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.navigation {
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0;
+
+    }
+    &__item {
+        padding-bottom: 24px;
+    }
+    &__link {
+        color: #4D5053;
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 1.5;
+        letter-spacing: 0.22;
+        margin: 0;
+
+        &:hover {
+            color: #CDA274;
+            transition: all 0.8s ease-out;
+        }
+        &:active {
+            color: #4D5053;
+            transition: all 0.8s ease-out;
+        }
+        &:focus {
+            color: #CDA274;
+            transition: all 0.8s ease-out;
+        }
+    }
+
+}
+</style>
+
