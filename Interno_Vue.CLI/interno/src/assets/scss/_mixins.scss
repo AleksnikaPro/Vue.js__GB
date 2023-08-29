@@ -21,6 +21,15 @@
     line-height: $height;
 }
 
+@mixin font-jost-medium($color, $size, $height){
+    color: $color;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: $size;
+    line-height: $height;
+}
+
 @mixin font-jost-semibold($color, $size, $height){
     color: $color;
     font-family: 'Jost', sans-serif;

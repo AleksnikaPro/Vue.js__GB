@@ -2,9 +2,9 @@
 @import 'mixins';
 
 
-.top-banner{
+.top-banner {
     margin-bottom: 200px;
-   
+
     &__content {
         background-image: url("../images/image_laceholder.png");
         background-position: center;
@@ -15,6 +15,7 @@
         height: 356px;
     }
 }
+
 .blog-details {
     margin-bottom: 96px;
 
@@ -26,51 +27,38 @@
         gap: 52px;
     }
 }
+
 .article {
-    // &__content{
 
     &__heading {
-        color: #292F36;
-        font-family: 'DM Serif Display', sans-serif;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.25;
+        @include font-DMSerifDisplay-regular($secondPrimaryColor, 50px, 1.25);
         letter-spacing: 1px;
         margin: 0;
         margin-bottom: 21px;
     }
+
     &__image {
         margin-bottom: 46px;
     }
+
     &__subcontent {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        // gap: 409px;
         margin-bottom: 48px;
 
     }
 
     &__date {
-        color: #4D5053;
-        font-family: 'Jost', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
+        @include font-jost-regular($fourthPrimaryColor, 16px, 1.5);
         letter-spacing: 0.16px;
         text-transform: capitalize;
         margin: 0;
     }
+
     &__text {
-        color: #4D5053;
-        font-family: 'Jost', sans-serif;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
+        @include font-jost-regular($fourthPrimaryColor, 22px, 1.5);
         letter-spacing: 0.22px;
         margin: 0;
         margin-bottom: 35px;
@@ -79,6 +67,7 @@
             margin-bottom: 24px;
         }
     }
+
     &__subtext-box {
         display: flex;
         flex-direction: row;
@@ -91,27 +80,20 @@
             margin-bottom: 44px;
         }
     }
+
     &__subtext-span {
-        color: #CDA274;
-        font-family: 'DM Serif Display', sans-serif;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.25;
+        @include font-DMSerifDisplay-regular($firstPrimaryColor, 20px, 1.25);
         letter-spacing: 0.4px;
         margin: 0;
     }
+
     &__subtext {
-        color: #4D5053;
-        font-family: 'Jost', sans-serif;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
+        @include font-jost-regular($fourthPrimaryColor, 22px, 1.5);
         letter-spacing: 0.22px;
         margin: 0;
     }
 }
+
 .breadcrumbs {
     &__list {
         display: flex;
@@ -120,9 +102,8 @@
         margin: 0;
 
     }
+
     &__item {
-        // display: inline-block;
-        // align-items: center;
 
         &:not(:last-child)::after {
             content: "/";
@@ -130,28 +111,26 @@
             margin-right: 8px;
         }
     }
+
     &__link {
-        color: #4D5053;
-        font-family: 'Jost', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
+        @include font-jost-regular($fourthPrimaryColor, 16px, 1.5);
         letter-spacing: 0.16px;
         text-transform: capitalize;
         margin: 0;
         @include transition-fast();
 
         &:hover {
-            color: #CDA274;
+            color: $firstPrimaryColor;
             @include transition-slow();
         }
+
         &:active {
-            color: #4D5053;
+            color: $fourthPrimaryColor;
             @include transition-slow();
         }
+
         &:focus {
-            color: #CDA274;
+            color: $firstPrimaryColor;
             @include transition-slow();
         }
     }
@@ -168,40 +147,33 @@
         align-items: center;
         padding: 53px 200px;
         border-radius: 50px;
-        background: #F4F0EC;
+        background: $thirdPrimaryColor;
     }
+
     &__text {
-        color: #CDA274;
+        @include font-DMSerifDisplay-regular($firstPrimaryColor, 25px, 1.25);
         text-align: center;
-        font-family: 'DM Serif Display', sans-serif;
-        font-size: 25px;
         font-style: italic;
-        font-weight: 400;
-        line-height: 1.25;
         letter-spacing: 0.5px;
         margin: 0;
     }
 }
+
 .sidebar {
     &__content {
         display: flex;
         flex-direction: column;
-        // flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 24px;
-        // max-height: 200px;
     }
+
     &__heading {
-        color: #292F36;
-        font-family: 'DM Serif Display', sans-serif;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.25;
+        @include font-DMSerifDisplay-regular($secondPrimaryColor, 25px, 1.25);
         letter-spacing: 0.5px;
         margin: 0;
     }
+
     &__buttons-box {
         display: flex;
         justify-content: flex-start;
@@ -209,38 +181,30 @@
         flex-wrap: wrap;
         gap: 10px;
     }
+
     &__button {
-        color: #292F36;
-        text-align: center;
-        font-family: 'Jost', sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.25;
+        @include font-jost-regular($secondPrimaryColor, 18px, 1.25);
         letter-spacing: 0.36px;
         border: none;
         border-radius: 10px;
-        background-color: #F4F0EC;
+        background-color: $thirdPrimaryColor;
         padding: 9px 30px;
         @include transition-fast();
 
         &:hover {
-            background-color: #CDA274;
+            background-color: $firstPrimaryColor;
             @include transition-slow();
         }
-        // &:active{
-        //     background-color:#292F36;
-        //     @include transition-slow();
-        // }
+
         &:focus {
-            color: #FFFFFF;
-            background-color: #292F36;
+            color: $mainColorOfSite;
+            background-color: $secondPrimaryColor;
             @include transition-slow();
         }
     }
 
     &__button_active {
-        color: #FFFFFF;
-        background-color: #292F36;
+        color: $mainColorOfSite;
+        background-color: $secondPrimaryColor;
     }
 }

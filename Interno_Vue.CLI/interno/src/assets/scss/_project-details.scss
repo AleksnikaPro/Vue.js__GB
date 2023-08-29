@@ -7,6 +7,7 @@
     &__intro {
         margin-bottom: 200px;
     }
+
     &__intro-content {
         background-image: url("../images/project_details_laceholder.png");
         background-position: center;
@@ -17,23 +18,21 @@
         height: 356px;
 
     }
+
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     &__heading {
-        color: #292F36;
-        font-family: 'DM Serif Display', sans-serif;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.25;
+        @include font-DMSerifDisplay-regular($secondPrimaryColor, 50px, 1.25);
         letter-spacing: 1px;
         margin: 0;
         margin-bottom: 11px;
     }
+
     &__text-box {
         display: flex;
         flex-direction: column;
@@ -43,21 +42,15 @@
         max-width: 658px;
         margin-bottom: 100px;
     }
+
     &__text {
-        color: #4D5053;
-        font-family: 'Jost', sans-serif;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
+        @include font-jost-regular($fourthPrimaryColor, 22px, 1.5);
         letter-spacing: 0.22px;
         margin: 0;
     }
+
     &__image {
         width: 100%;
     }
 
 }
-
-
-

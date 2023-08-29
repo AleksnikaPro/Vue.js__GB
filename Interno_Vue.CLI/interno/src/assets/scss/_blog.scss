@@ -12,6 +12,7 @@
         display: flex;
         justify-content: center;
     }
+
     &__title-content {
         display: flex;
         flex-direction: column;
@@ -25,20 +26,19 @@
         max-width: 503px;
         margin-top: 178px;
     }
+
     &__heading {
-        color: #292F36;
-        font-family: 'DM Serif Display', sans-serif;
-        font-size: 49px;
-        font-style: normal;
-        font-weight: 400;
+        @include font-DMSerifDisplay-regular($secondPrimaryColor, 49px, 1.25);
         line-height: 1.25;
         margin: 0;
 
     }
+
     &__breadcrumbs {
         margin: 0;
         padding: 0;
     }
+
     &__breadcrumbs-item {
         display: inline-block;
         align-items: center;
@@ -49,48 +49,39 @@
             margin-right: 8px;
         }
     }
+
     &__breadcrumbs-link {
-        color: #4D5053;
-        font-family: 'Jost', sans-serif;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.50;
+        @include font-jost-regular($fourthPrimaryColor, 22px, 1.5);
         letter-spacing: 0.22px;
         @include transition-fast();
 
         &:hover {
-            color: #CDA274;
+            color: $firstPrimaryColor;
             @include transition-slow();
         }
+
         &:active {
-            color: #4D5053;
+            color: $fourthPrimaryColor;
             @include transition-slow();
         }
+
         &:focus {
-            color: #CDA274;
+            color: $firstPrimaryColor;
             @include transition-slow();
         }
     }
 }
 
-//____________________________________________
-
 .news {
     margin-bottom: 200px;
 
-    // &__content {}
     &__heading {
-        color: #292F36;
-        font-family: 'DM Serif Display', sans-serif;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.25;
+        @include font-DMSerifDisplay-regular($secondPrimaryColor, 50px, 1.25);
         letter-spacing: 1px;
         margin: 0;
         margin-bottom: 30px;
     }
+
     &__items {
         display: grid;
         grid-template-columns: repeat(3, 382px);
@@ -100,169 +91,126 @@
         gap: 27px;
         margin-bottom: 51px;
     }
-    &__item {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 21px;
-        padding: 21px;
-        border-radius: 62px;
-        border: 1px solid #E7E7E7;
-        box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
-        justify-content: center;
-        align-items: center;
-        @include transition-fast();
 
-        &:hover {
-            background-color: #F4F0EC;
-            @include transition-slow();
-        }
-        &:hover .item-content__button{
-            background-color: #FFFFFF;
-            @include transition-slow();
-        }
-    }
-    &__item-image {
-        display: flex;
-        width: 100%;
-    }
-    &__item-tagbox {
-        position: absolute;
-        top: 253px;
-        left: 52px;
-        background-color: #FFFFFF;
-        padding: 4px 20px 8px 11px;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-    }
-    &__item-tag {
-        color: #4D5053;
-        font-family: Jost;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.16px;
-        text-transform: capitalize;
-        margin: 0;
-    }
-    &__pagination {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    // &__item {
+    //     position: relative;
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 21px;
+    //     padding: 21px;
+    //     border-radius: 62px;
+    //     border: 1px solid $lightColor;
+    //     box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+    //     justify-content: center;
+    //     align-items: center;
+    //     @include transition-fast();
 
-    }
-    &__pagination-box {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0;
-        gap: 20px;
-    }
-    &__pagination-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 52px;
-        height: 52px;
-        border: 1px solid #cda274;
-        border-radius: 50%;
-        color: #292f36;
-        font-family: 'Jost', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.5;
-        text-transform: capitalize;
-        @include transition-fast();
-    }
-    &__pagination-item_active {
-        background-color: #f4f0ec;
-        border: none;
-    }
-}
-.item-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
+    //     &:hover {
+    //         background-color: $thirdPrimaryColor;
+    //         @include transition-slow();
+    //     }
 
-    &__box {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        min-width: 340px;
-    }
-    &__title-box {
-        display: flex;
-        width: 305px;
-        height: 70px;
-        flex-direction: column;
-        justify-content: center;
-    }
-    &__title {
-        color: $secondPrimaryColor;
-        font-family: 'DM Serif Display', sans-serif;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.25;
-        letter-spacing: 0.5px;
-        margin: 0;
-    }
-    &__date {
-        color: #4D5053;
-        font-family: 'Jost', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.16px;
-        text-transform: capitalize;
-        margin: 0;
-    }
-    &__button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        height: 52px;
-        width: 52px;
-        border-radius: 50%;
-        background-color: #F4F0EC;
-        cursor: pointer;
-        padding: 0;
-        @include transition-slow();
-      
-        &:active {
-            background-color: #4D5053;
-            @include transition-slow();
-        }
-        &:focus {
-            background-color: #CDA274;
-            @include transition-slow();
-        }
-    }
+    //     &:hover .item-content__button {
+    //         background-color: $mainColorOfSite;
+    //         @include transition-slow();
+    //     }
+    // }
+
+    // &__item-image {
+    //     display: flex;
+    //     width: 100%;
+    // }
+
+    // &__item-tagbox {
+    //     position: absolute;
+    //     top: 253px;
+    //     left: 52px;
+    //     background-color: $mainColorOfSite;
+    //     padding: 4px 20px 8px 11px;
+    //     border-top-left-radius: 8px;
+    //     border-top-right-radius: 8px;
+    //     border-bottom-right-radius: 8px;
+    // }
+
+    // &__item-tag {
+    //     @include font-jost-regular($fourthPrimaryColor, 16px, 1.5);
+    //     letter-spacing: 0.16px;
+    //     text-transform: capitalize;
+    //     margin: 0;
+    // }
 }
 
-//___________________________________________
+// .item-content {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     align-items: center;
+//     gap: 30px;
+
+//     &__box {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         align-items: center;
+//         min-width: 340px;
+//     }
+
+//     &__title-box {
+//         display: flex;
+//         width: 305px;
+//         height: 70px;
+//         flex-direction: column;
+//         justify-content: center;
+//     }
+
+//     &__title {
+//         @include font-DMSerifDisplay-regular($secondPrimaryColor, 25px, 1.25);
+//         letter-spacing: 0.5px;
+//         margin: 0;
+//     }
+
+//     &__date {
+//         @include font-jost-regular($fourthPrimaryColor, 16px, 1.5);
+//         letter-spacing: 0.16px;
+//         text-transform: capitalize;
+//         margin: 0;
+//     }
+
+//     &__button {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         border: none;
+//         height: 52px;
+//         width: 52px;
+//         border-radius: 50%;
+//         background-color: $thirdPrimaryColor;
+//         cursor: pointer;
+//         padding: 0;
+//         @include transition-slow();
+
+//         &:active {
+//             background-color: $fourthPrimaryColor;
+//             @include transition-slow();
+//         }
+
+//         &:focus {
+//             background-color: $firstPrimaryColor;
+//             @include transition-slow();
+//         }
+//     }
+// }
+
 .post {
     margin-bottom: 150px;
 
     &__heading {
-        color: #292F36;
-        font-family: 'DM Serif Display', sans-serif;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.25;
+        @include font-DMSerifDisplay-regular($secondPrimaryColor, 50px, 1.25);
         letter-spacing: 1px;
         margin: 0;
         margin-bottom: 27px;
     }
+
     &__subcontent-box {
         display: flex;
         flex-direction: row;
@@ -270,10 +218,11 @@
         align-items: center;
         gap: 65px;
         border-radius: 62px;
-        border: 1px solid #E7E7E7;
+        border: 1px solid $lightColor;
         box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
         padding: 22px;
     }
+
     &__subcontent {
         display: flex;
         flex-direction: column;
@@ -282,6 +231,7 @@
         max-width: 489px;
         gap: 31px;
     }
+
     &__subcontent-container {
         display: flex;
         flex-direction: column;
@@ -291,28 +241,21 @@
         gap: 22px;
 
     }
+
     &__subcontent-heading {
-        color: #292F36;
-        font-family: 'DM Serif Display', sans-serif;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.25;
+        @include font-DMSerifDisplay-regular($secondPrimaryColor, 25px, 1.25);
         letter-spacing: 0.5px;
         margin: 0;
     }
+
     &__subcontent-text {
-        color: #4D5053;
-        font-family: 'Jost', sans-serif;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
+        @include font-jost-regular($fourthPrimaryColor, 22px, 1.5);
         letter-spacing: 0.22px;
         margin: 0;
         margin-bottom: 10px;
 
     }
+
     &__subtitle-box {
         display: flex;
         flex-direction: row;
@@ -321,18 +264,15 @@
         min-width: 469px;
 
     }
+
     &__subcontent-subtitle {
-        color: #4D5053;
-        font-family: Jost;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
+        @include font-jost-regular($fourthPrimaryColor, 16px, 1.5);
         letter-spacing: 0.16px;
         text-transform: capitalize;
         margin: 0;
     }
-    &__button{
+
+    &__button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -340,28 +280,31 @@
         height: 52px;
         width: 52px;
         border-radius: 50%;
-        background-color: #F4F0EC;
+        background-color: $thirdPrimaryColor;
         cursor: pointer;
         @include transition-slow();
         padding: 0;
 
-        &:hover{
-            background-color: #FFFFFF;
-            border: 1px solid #E7E7E7;
+        &:hover {
+            background-color: $mainColorOfSite;
+            border: 1px solid $lightColor;
             @include transition-slow();
         }
+
         &:active {
-            background-color: #4D5053;
+            background-color: $fourthPrimaryColor;
             border: none;
             @include transition-slow();
         }
+
         &:focus {
-            background-color: #CDA274;
+            background-color: $firstPrimaryColor;
             border: none;
             @include transition-slow();
         }
     }
-    &__button:nth-child(1){
-        background-color: #FFFFFF;
+
+    &__button:nth-child(1) {
+        background-color: $mainColorOfSite;
     }
 }

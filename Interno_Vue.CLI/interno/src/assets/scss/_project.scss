@@ -28,12 +28,7 @@
     }
 
     &__heading {
-        color: #292F36;
-        font-family: 'DM Serif Display', sans-serif;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.25;
+        @include font-DMSerifDisplay-regular($secondPrimaryColor, 50px, 1.25);
         margin: 0;
 
     }
@@ -55,98 +50,77 @@
     }
 
     &__breadcrumbs-link {
-        color: #4D5053;
-        font-family: 'Jost', sans-serif;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.50;
+        @include font-jost-regular($fourthPrimaryColor, 22px, 1.5);
         letter-spacing: 0.22px;
         @include transition-fast();
 
         &:hover {
-            color: #CDA274;
+            color: $firstPrimaryColor;
             @include transition-slow();
         }
 
         &:active {
-            color: #4D5053;
+            color: $fourthPrimaryColor;
             @include transition-slow();
         }
 
         &:focus {
-            color: #CDA274;
+            color: $firstPrimaryColor;
             @include transition-slow();
         }
     }
 }
-//____________________________________________
 
-.categories{
+
+.categories {
     margin-bottom: 61px;
 
-    &__content{
+    &__content {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
         border-radius: 18px;
-        border: 1px solid #E7E7E7;
+        border: 1px solid $lightColor;
         margin-left: 140px;
         margin-right: 140px;
     }
+
     &__btn {
-        color: #292F36;
+        @include font-jost-semibold($secondPrimaryColor, 18px, 1.25);
         text-align: center;
-        font-family: 'Jost', sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 1.25;
         letter-spacing: 0.36px;
         border: none;
         border-radius: 18px;
-        background-color: #FFFFFF;
+        background-color: $mainColorOfSite;
         padding: 26px 66px;
         width: 230px;
         @include transition-fast();
 
         &:hover {
-            background-color: #CDA274;
+            background-color: $firstPrimaryColor;
             @include transition-slow();
         }
-        // &:active{
-        //     background-color:#292F36;
-        //     @include transition-slow();
-        // }
+
         &:focus {
-            color: #FFFFFF;
-            background-color: #292F36;
+            color: $mainColorOfSite;
+            background-color: $secondPrimaryColor;
             @include transition-slow();
         }
     }
 
     &__btn_active {
-        color: #FFFFFF;
-        background-color: #CDA274;
+        color: $mainColorOfSite;
+        background-color: $secondPrimaryColor;
     }
 }
 
-//____________________________________________
 
 .projects {
     margin-bottom: 200px;
 
-    // &__content {}
-   
     &__items {
-        // display: flex;
-        // justify-content: center;
-        // align-content: center;
-        // flex-flow: row;
-        // flex-wrap: wrap;
-        // gap: 30px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -161,9 +135,9 @@
 
     &__item-image {
         display: flex;
-        // width: 100%;
-       max-width: 585px;
+        max-width: 585px;
     }
+
     &__item-content {
         display: flex;
         flex-direction: row;
@@ -171,6 +145,7 @@
         align-items: center;
         padding-top: 22px;
     }
+
     &__item-box {
         display: flex;
         min-width: 290px;
@@ -182,26 +157,19 @@
         justify-content: flex-end;
 
     }
+
     &__item-title {
-        color: $secondPrimaryColor;
-        font-family: 'DM Serif Display', sans-serif;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.25;
+        @include font-DMSerifDisplay-regular($secondPrimaryColor, 25px, 1.25);
         letter-spacing: 0.5px;
         margin: 0;
     }
+
     &__item-subtitle {
-        color: #4D5053;
-        font-family: 'Jost', sans-serif;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
+        @include font-jost-regular($fourthPrimaryColor, 22px, 1.5);
         letter-spacing: 0.22px;
         margin: 0;
     }
+
     &__item-button {
         display: flex;
         justify-content: center;
@@ -210,66 +178,29 @@
         height: 52px;
         width: 52px;
         border-radius: 50%;
-        background-color: #F4F0EC;
+        background-color: $thirdPrimaryColor;
         cursor: pointer;
         @include transition-slow();
         padding: 0;
 
-        &:hover{
-            background-color: #FFFFFF;
-            border: 1px solid #E7E7E7;
+        &:hover {
+            background-color: $mainColorOfSite;
+            border: 1px solid $lightColor;
             @include transition-slow();
         }
+
         &:active {
-            background-color: #4D5053;
+            background-color: $fourthPrimaryColor;
             border: none;
             @include transition-slow();
         }
+
         &:focus {
-            background-color: #CDA274;
+            background-color: $firstPrimaryColor;
             border: none;
             @include transition-slow();
         }
     }
-
-    &__pagination {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    &__pagination-box {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0;
-        gap: 20px;
-    }
-
-    &__pagination-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 52px;
-        height: 52px;
-        border: 1px solid #cda274;
-        border-radius: 50%;
-        color: #292f36;
-        font-family: 'Jost', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.5;
-        text-transform: capitalize;
-        @include transition-fast();
-    }
-
-    &__pagination-item_active {
-        background-color: #f4f0ec;
-        border: none;
-    }
-
 }
 
 .star-box {
@@ -279,6 +210,5 @@
 }
 
 .star_active path {
-    fill:#FFA928;
+    fill: #FFA928;
 }
-

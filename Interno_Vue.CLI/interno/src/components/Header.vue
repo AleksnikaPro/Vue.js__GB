@@ -1,10 +1,10 @@
 <template>
     <header class="header center">
         <div class="header__content">
-            <a href="#" class="header__logo">
+            <router-link to="/" class="header__logo">
                 <img class="header__logo-img" src="../assets/images/logo.svg" alt="logo">
-            </a>
-            <Navigation :style="navigation"/>
+            </router-link>
+            <Navigation class="navigation" />
         </div>
     </header>
 </template>
@@ -21,60 +21,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/scss/_vars.scss';
+@import '../assets/scss/_mixins.scss';
+.navigation :deep(.navigation__list) {
+    display: flex;
+    gap: 25px;
+}
 
-.navigation {
+.navigation :deep(.navigation__link) {
+    @include font-jost-regular($secondPrimaryColor, 20px, 1.25);
+    text-align: center;
 
-    &__list {
-        display: flex;
-        gap: 25px;
-    }
-    &__link {
-        color: #292F36;
-        font-family: 'Jost', sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 20px;
-        line-height: 1.25;
-        text-align: center;
-
-        &:hover {
-            color: #CDA274;
-            transition: all 0.8s ease-out;
-        }
-        &:active {
-            color: #4D5053;
-            transition: all 0.8s ease-out;
-        }
-        &:focus {
-            color: #CDA274;
-            transition: all 0.8s ease-out;
-        }
+    &:hover {
+        color: $firstPrimaryColor;
+        @include transition-slow();
     }
 
-    // &__list {
-    //     display: flex;
-    //     gap: 25px;
-    // }
+    &:active {
+        color: $fourthPrimaryColor;
+        @include transition-slow();
+    }
 
-    // &__link {
-    //     @include font-jost-regular($secondPrimaryColor, 20px, 1.25);
-    //     text-align: center;
-
-    //     &:hover {
-    //         color: $firstPrimaryColor;
-    //         @include transition-slow();
-    //     }
-
-    //     &:active {
-    //         color: $fourthPrimaryColor;
-    //         @include transition-slow();
-    //     }
-
-    //     &:focus {
-    //         color: $firstPrimaryColor;
-    //         @include transition-slow();
-    //     }
-    // }
-
+    &:focus {
+        color: $firstPrimaryColor;
+        @include transition-slow();
+    }
 }
 </style>

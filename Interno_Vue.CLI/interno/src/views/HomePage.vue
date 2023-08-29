@@ -7,16 +7,7 @@
                     <p class="banner__subcontent-text">There are many variations of the passages of lorem Ipsum
                         fromavailable, majority.</p>
                 </div>
-                <div class="banner__button-box">
-                    <button class="banner__button">
-                        Get Started
-                        <svg class="banner__button-arrow" width="19" height="17" viewBox="0 0 19 17" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887"
-                                stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
+                <BlackButton :button-text="buttonText" :link="link" />
             </div>
         </div>
     </section>
@@ -67,36 +58,28 @@
                     layouts the points of using.</p>
             </div>
             <div class="blog__items">
-                <div v-for="blog in listOfBlogs" :key="blog.id" class="blog__item">
-                    <img class="blog__item-image" :src="blog.src" :alt="blog.alt">
-                    <div class="blog__item-tagbox">
-                        <p class="blog__item-tag">{{ blog.tag }}</p>
-                    </div>
-                    <div class="item-content">
-                        <p class="item-content__title">{{ blog.title }}</p>
-                        <div class="item-content__box">
-                            <p class="item-content__date">{{ blog.date }}</p>
-                            <a href="#" class="item-content__button">
-                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.27101 14.9525L7.21387 8.26683L1.27101 1.58112" stroke="#292F36"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <ArticleCard v-for="item in listOfBlogs" :item="item" />
             </div>
         </div>
     </section>
 </template>
 
 <script>
+import ArticleCard from '../components/ArticleCard.vue'
+import BlackButton from '@/components/BlackButton.vue';
+
 export default {
     name: 'HomePage',
 
+    components: {
+        ArticleCard,
+        BlackButton
+    },
+
     data() {
         return {
+            buttonText: 'Get Started',
+            link: '/projectdetails',
             listOfProjects: [
                 {
                     id: 'first-project', src: require('@/assets/images/project-photo1.png'), alt: 'first project', firstparagraph: 'Modern Kitchan', secondparagraph: 'Decor / Artchitecture'

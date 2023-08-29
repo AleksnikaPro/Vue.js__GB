@@ -5,8 +5,7 @@
                 <h2 class="projects-intro__heading">Our Project</h2>
                 <ul class="projects-intro__breadcrumbs">
                     <li class="projects-intro__breadcrumbs-item">
-                        <!-- ????????? -->
-                        <a href="../index.html" class="projects--link">Home</a>
+                        <router-link to="/" class="projects-intro__breadcrumbs-link">Home</router-link>
                     </li>
                     <li class="projects-intro__breadcrumbs-item">
                         <a href="#" class="projects-intro__breadcrumbs-link">Project</a>
@@ -70,28 +69,20 @@
                 </div>
 
             </div>
-            <!-- pagination -->
-            <div class="projects__pagination">
-                <ul class="projects__pagination-box">
-                    <a href="#" class="projects__pagination-item projects__pagination-item_active">01</a>
-                    <a href="#" class="projects__pagination-item">02</a>
-                    <a href="#" class="projects__pagination-item">03</a>
-                    <a href="#" class="projects__pagination-item">
-                        <svg class="projects__pagination-image" width="9" height="16" viewBox="0 0 9 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.55714 15L7.5 8.31429L1.55714 1.62857" stroke="#292F36" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </ul>
-            </div>
+           <Pagination />
         </div>
     </div>
 </template>
 
 <script>
+import  Pagination from '../components/Pagination.vue';
+
 export default {
     name: 'Project',
+
+    components: {
+        Pagination
+    },
 
     data() {
         return {
