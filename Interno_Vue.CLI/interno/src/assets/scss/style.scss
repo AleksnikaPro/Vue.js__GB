@@ -63,61 +63,6 @@ body {
         letter-spacing: 0.22px;
         margin: 0;
     }
-
-    // &__button-box {
-    //     display: flex;
-    //     justify-content: flex-start;
-    //     align-items: center;
-    //     flex-wrap: nowrap;
-    // }
-
-    // &__button {
-    //     display: flex;
-    //     padding: 26px 49px 26px 48px;
-    //     justify-content: center;
-    //     align-items: center;
-    //     flex-wrap: nowrap;
-    //     max-width: 228px;
-    //     box-sizing: border-box;
-    //     border-radius: 18px;
-    //     border: 1px solid #292F36;
-    //     background: #292F36;
-    //     box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
-    //     cursor: pointer;
-
-    //     @include font-jost-semibold($mainColorOfSite, 18px, 1.25);
-    //     letter-spacing: 0.36px;
-    //     text-align: center;
-    //     @include transition-slow();
-
-    //     &:hover {
-    //         color: $firstPrimaryColor;
-    //         background: $mainColorOfSite;
-    //         border: 1px solid $secondPrimaryColor;
-    //         @include transition-slow();
-    //     }
-
-    //     &:focus {
-    //         outline: none !important;
-    //         fill: $mainColorOfSite;
-    //     }
-
-    //     &:active {
-    //         color: $firstPrimaryColor;
-    //         background: $mainColorOfSite;
-    //         border: 1px solid $secondPrimaryColor;
-    //         @include transition-fast();
-    //     }
-
-    // }
-
-    // &__button-arrow {
-    //     margin-left: 10px;
-
-    //     &:hover path {
-    //         @include transition-slow();
-    //     }
-    // }
 }
 
 .project {
@@ -317,52 +262,5 @@ body {
         align-content: center;
         gap: 27px;
     }
-
-    // &__item {
-    //     position: relative;
-    //     display: flex;
-    //     flex-direction: column;
-    //     gap: 21px;
-    //     padding: 21px;
-    //     border-radius: 62px;
-    //     border: 1px solid $lightColor;
-    //     box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
-    //     justify-content: center;
-    //     align-items: center;
-    //     @include transition-fast();
-
-    //     &:hover {
-    //         background-color: $thirdPrimaryColor;
-    //         @include transition-slow();
-    //     }
-
-    //     &:hover .item-content__button {
-    //         background-color: $mainColorOfSite;
-    //         @include transition-slow();
-    //     }
-    // }
-
-    // &__item-image {
-    //     display: flex;
-    //     width: 100%;
-    // }
-
-    // &__item-tagbox {
-    //     position: absolute;
-    //     top: 253px;
-    //     left: 52px;
-    //     background-color: $mainColorOfSite;
-    //     padding: 4px 20px 8px 11px;
-    //     border-top-left-radius: 8px;
-    //     border-top-right-radius: 8px;
-    //     border-bottom-right-radius: 8px;
-    // }
-
-    // &__item-tag {
-    //     @include font-jost-regular($fourthPrimaryColor, 16px, 1.5);
-    //     letter-spacing: 0.16px;
-    //     text-transform: capitalize;
-    //     margin: 0;
-    // }
 }
 

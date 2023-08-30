@@ -4,7 +4,7 @@
             <div class="not-found__content_right">
                 <p class="not-found__title">{{ info.title }}</p>
                 <p class="not-found__text">{{ info.text }}</p>
-                <BlackButton :button-text="buttonText" :link="link" />
+                <BlackButton :button-text="buttonText" :link="link" class="button"/>
             </div>
             <div class="not-found__content_left">
                 <img class="not-found__image" :src="info.src" :alt="info.alt">
@@ -41,4 +41,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.button :deep(.button__paddings) {
+    padding: 26px 54px 26px 54px;
+}
+</style>

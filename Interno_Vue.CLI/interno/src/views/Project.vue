@@ -69,13 +69,13 @@
                 </div>
 
             </div>
-           <Pagination />
+            <Pagination />
         </div>
     </div>
 </template>
 
 <script>
-import  Pagination from '../components/Pagination.vue';
+import Pagination from '../components/Pagination.vue';
 
 export default {
     name: 'Project',
@@ -88,28 +88,28 @@ export default {
         return {
             currentCategoryList: [
                 {
-                    id: '1', src: require('@/assets/images/projects_img1.png'), alt: 'bedroom one', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '17', src: require('@/assets/images/projects_kitchen1.png'), alt: 'kitchen one', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: '2', src: require('@/assets/images/projects_img2.png'), alt: 'bedroom two', firstparagraph: 'Classic Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '18', src: require('@/assets/images/projects_kitchen2.png'), alt: 'kitchen two', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: '3', src: require('@/assets/images/projects_img3.png'), alt: 'bedroom three', firstparagraph: 'Minimal Bedroom Table', secondparagraph: 'Decor / Artchitecture'
+                    id: '19', src: require('@/assets/images/projects_kitchen3.png'), alt: 'kitchen three', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: '4', src: require('@/assets/images/projects_img4.png'), alt: 'bedroom four', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '20', src: require('@/assets/images/projects_kitchen4.png'), alt: 'kitchen four', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: '5', src: require('@/assets/images/projects_img5.png'), alt: 'bedroom five', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '21', src: require('@/assets/images/projects_kitchen5.png'), alt: 'kitchen five', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: '6', src: require('@/assets/images/projects_img6.png'), alt: 'bedroom six', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '22', src: require('@/assets/images/projects_kitchen6.png'), alt: 'kitchen six', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: '7', src: require('@/assets/images/projects_img7.png'), alt: 'bedroom seven', firstparagraph: 'System Bedroom Table', secondparagraph: 'Decor / Artchitecture'
+                    id: '23', src: require('@/assets/images/projects_kitchen7.png'), alt: 'kitchen seven', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: '8', src: require('@/assets/images/projects_img8.png'), alt: 'bedroom eight', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'
+                    id: '24', src: require('@/assets/images/projects_kitchen8.png'), alt: 'kitchen eight', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 }
             ],
             allCategoriesList: [
@@ -224,7 +224,7 @@ export default {
                     id: 'livingroom', title: 'Living Area'
                 }
             ],
-            buttonIsActive: 'bedroom',
+            buttonIsActive: 'kitchen',
         };
     },
     methods: {

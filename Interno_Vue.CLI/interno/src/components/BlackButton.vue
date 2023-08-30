@@ -1,6 +1,6 @@
 <template>
     <div class="button__box">
-        <router-link to="link" class="button__content">
+        <router-link :to="link" class="button__content button__paddings ">
             {{ buttonText }}
             <svg class="button__arrow" width="19" height="17" viewBox="0 0 19 17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">

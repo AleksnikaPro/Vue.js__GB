@@ -1350,7 +1350,6 @@ summary::-webkit-details-marker {
 }
 .button__content {
   display: flex;
-  padding: 26px 49px 26px 48px;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;

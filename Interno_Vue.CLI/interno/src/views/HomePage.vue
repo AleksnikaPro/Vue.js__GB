@@ -7,7 +7,7 @@
                     <p class="banner__subcontent-text">There are many variations of the passages of lorem Ipsum
                         fromavailable, majority.</p>
                 </div>
-                <BlackButton :button-text="buttonText" :link="link" />
+                <BlackButton :button-text="buttonText" :link="link" class="button" />
             </div>
         </div>
     </section>
@@ -28,12 +28,12 @@
                             <p class="project__item-title">{{ project.firstparagraph }}</p>
                             <p class="project__item-subtitle">{{ project.secondparagraph }}</p>
                         </div>
-                        <a href="#" class="project__item-button">
+                        <router-link :to="secondLink" class="project__item-button">
                             <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.27101 14.9525L7.21387 8.26683L1.27101 1.58112" stroke="#292F36" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </a>
+                        </router-link>
                     </div>
                 </div>
             </div>
@@ -79,19 +79,20 @@ export default {
     data() {
         return {
             buttonText: 'Get Started',
-            link: '/projectdetails',
+            link: '/project',
+            secondLink: '/project',
             listOfProjects: [
                 {
-                    id: 'first-project', src: require('@/assets/images/project-photo1.png'), alt: 'first project', firstparagraph: 'Modern Kitchan', secondparagraph: 'Decor / Artchitecture'
+                    id: 'first-project', src: require('@/assets/images/project-photo1.png'), alt: 'first project', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'second-project', src: require('@/assets/images/project-photo2.png'), alt: 'second project', firstparagraph: 'Modern Kitchan', secondparagraph: 'Decor / Artchitecture'
+                    id: 'second-project', src: require('@/assets/images/project-photo2.png'), alt: 'second project', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'third-project', src: require('@/assets/images/project-photo3.png'), alt: 'third project', firstparagraph: 'Modern Kitchan', secondparagraph: 'Decor / Artchitecture'
+                    id: 'third-project', src: require('@/assets/images/project-photo3.png'), alt: 'third project', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 },
                 {
-                    id: 'fourth-project', src: require('@/assets/images/project-photo4.png'), alt: 'fourth project', firstparagraph: 'Modern Kitchan', secondparagraph: 'Decor / Artchitecture'
+                    id: 'fourth-project', src: require('@/assets/images/project-photo4.png'), alt: 'fourth project', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
                 }
             ],
             listOfCounters: [
@@ -110,7 +111,7 @@ export default {
             ],
             listOfBlogs: [
                 {
-                    id: 'first-blog', src: require('@/assets/images/blog-photo1.png'), alt: 'first blog', tag: 'Kitchan Design', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022'
+                    id: 'first-blog', src: require('@/assets/images/blog-photo1.png'), alt: 'first blog', tag: 'Kitchen Design', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022'
                 },
                 {
                     id: 'second-blog', src: require('@/assets/images/blog-photo2.png'), alt: 'second blog', tag: 'Living Design', title: 'Low Cost Latest Invented Interior Designing Ideas', date: '22 December,2022'
@@ -124,4 +125,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.button :deep(.button__paddings) {
+    padding: 26px 49px 26px 48px;
+}
+</style>
