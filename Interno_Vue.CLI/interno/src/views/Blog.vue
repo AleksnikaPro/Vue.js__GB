@@ -46,7 +46,7 @@
             <div class="news__items">
                 <ArticleCard v-for="item in displayedCards" :item="item" />
             </div>
-            <Pagination :totalNumberPaginationPages="totalNumberPaginationPages"
+            <Pagination :totalNumberPaginationPages="setTotalNumberOfPages()"
                 :currentPage="currentPage"  @pagechanged="changeCurrentPage" />
         </div>
     </section>
@@ -62,11 +62,8 @@ export default {
     name: 'Blog',
     data() {
         return {
-            totalNumberPaginationPages: 6,
             currentPage: 1,//текущая просматриваемая страница
             limitOfCardsPerPage: 6,//количество карточек будем выводить на текущей странице
-            // listOfPages: [],//массив номеров страниц для того, чтобы выводить каждый номер страницы
-
         };
     },
 
@@ -75,9 +72,9 @@ export default {
         Pagination
     },
     methods: {
-        // setTotalNumberOfPages() { //вычисляем общее кол-во страниц
-        //     return Math.ceil(this.getListOfCards.length / this.limitOfCardsPerPage);
-        // },
+        setTotalNumberOfPages() { //вычисляем общее кол-во страниц
+            return Math.ceil(this.getListOfCards.length / this.limitOfCardsPerPage);
+        },
         paginateListOfCards(listOfCards) {
             let page = this.currentPage;
             let perPage = this.limitOfCardsPerPage;

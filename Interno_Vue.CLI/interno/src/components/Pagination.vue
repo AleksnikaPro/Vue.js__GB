@@ -36,15 +36,24 @@ export default {
         maxVisibleButtons: {
             type: Number,
             required: false,
-            default: 3
+            default: 3,
+            validator: function(value) {
+                return value >= 0;
+            }
         },
         totalNumberPaginationPages: {
             type: Number,
-            required: true
+            required: true,
+            validator: function(value) {
+                return value >= 0;
+            }
         },
         currentPage: {
             type: Number,
-            required: true
+            required: true,
+            validator: function(value) {
+                return value >= 0;
+            }
         },
     },
     computed: {
