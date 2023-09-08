@@ -1,9 +1,3 @@
-// @mixin flexible(){
-//     display: flex;
-//     justify-content: center;
-//     align-items: center; 
-// }
-
 @mixin transition-fast(){
     transition: all 0.5s ease-out;
 }

@@ -69,7 +69,8 @@
                 </div>
 
             </div>
-            <Pagination />
+            <Pagination :maxVisibleButtons="maxVisibleButtons"
+                :totalNumberPaginationPages="totalNumberPaginationPages" :currentPage="currentPage"/>
         </div>
     </div>
 </template>
@@ -86,6 +87,10 @@ export default {
 
     data() {
         return {
+            maxVisibleButtons: 3,
+            totalNumberPaginationPages: 6,
+            currentPage: 1,
+
             currentCategoryList: [
                 {
                     id: '17', src: require('@/assets/images/projects_kitchen1.png'), alt: 'kitchen one', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'

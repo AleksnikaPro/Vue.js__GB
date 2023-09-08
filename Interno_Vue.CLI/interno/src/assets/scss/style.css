@@ -1088,6 +1088,8 @@ summary::-webkit-details-marker {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.pagination__button {
   width: 52px;
   height: 52px;
   border: 1px solid #CDA274;
@@ -1104,6 +1106,12 @@ summary::-webkit-details-marker {
 .pagination__item_active {
   background-color: #F4F0EC;
   border: none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .footer {
