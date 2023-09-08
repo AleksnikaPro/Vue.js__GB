@@ -60,16 +60,16 @@ import { mapGetters } from 'vuex';
 
 export default {
     name: 'Blog',
+    
+    components: {
+        ArticleCard,
+        Pagination
+    },
     data() {
         return {
             currentPage: 1,//текущая просматриваемая страница
             limitOfCardsPerPage: 6,//количество карточек будем выводить на текущей странице
         };
-    },
-
-    components: {
-        ArticleCard,
-        Pagination
     },
     methods: {
         setTotalNumberOfPages() { //вычисляем общее кол-во страниц
