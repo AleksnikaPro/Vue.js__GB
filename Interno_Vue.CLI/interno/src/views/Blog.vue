@@ -87,11 +87,6 @@ export default {
             this.currentPage = page;
         }
     },
-    watch: {//функция, которая запускаетя при изменении свойств данных
-        listOfCards() {
-            this.setTotalNumberOfPages();
-        }
-    },
     computed: {
         ...mapGetters(['getListOfCards']),
         displayedCards() {

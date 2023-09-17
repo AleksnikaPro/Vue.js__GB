@@ -32,14 +32,14 @@ export default {
             { id: '24', tag: 'bedroom', src: require('@/assets/images/projects_img3.png'), alt: 'bedroom twenty-four', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'},
 
 
-            { id: '25', tag: 'bedroom', src: require('@/assets/images/projects_img5.png'), alt: 'bedroom twenty-five', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '26', tag: 'bedroom', src: require('@/assets/images/projects_img6.png'), alt: 'bedroom twenty-six', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '27', tag: 'bedroom', src: require('@/assets/images/projects_img5.png'), alt: 'bedroom twenty-seven', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '28', tag: 'bedroom', src: require('@/assets/images/projects_img6.png'), alt: 'bedroom twenty-eight', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '29', tag: 'bedroom', src: require('@/assets/images/projects_img6.png'), alt: 'bedroom twenty-nine', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '30', tag: 'bedroom', src: require('@/assets/images/projects_img5.png'), alt: 'bedroom thirty', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '31', tag: 'bedroom', src: require('@/assets/images/projects_img6.png'), alt: 'bedroom thirty-one', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '32', tag: 'bedroom', src: require('@/assets/images/projects_img5.png'), alt: 'bedroom thirty-two', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '25', tag: 'bedroom', src: require('@/assets/images/projects_img6.png'), alt: 'bedroom twenty-five', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '26', tag: 'bedroom', src: require('@/assets/images/projects_img5.png'), alt: 'bedroom twenty-six', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '27', tag: 'bedroom', src: require('@/assets/images/projects_img6.png'), alt: 'bedroom twenty-seven', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '28', tag: 'bedroom', src: require('@/assets/images/projects_img5.png'), alt: 'bedroom twenty-eight', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '29', tag: 'bedroom', src: require('@/assets/images/projects_img5.png'), alt: 'bedroom twenty-nine', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '30', tag: 'bedroom', src: require('@/assets/images/projects_img6.png'), alt: 'bedroom thirty', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '31', tag: 'bedroom', src: require('@/assets/images/projects_img5.png'), alt: 'bedroom thirty-one', firstparagraph: 'Minimal Bedroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '32', tag: 'bedroom', src: require('@/assets/images/projects_img6.png'), alt: 'bedroom thirty-two', firstparagraph: 'Modern Bedroom', secondparagraph: 'Decor / Artchitecture'},
 
 
             { id: '33', tag: 'bathroom', src: require('@/assets/images/projects_bathroom1.png'), alt: 'bathroom one', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
@@ -72,14 +72,14 @@ export default {
             { id: '56', tag: 'bathroom', src: require('@/assets/images/projects_bathroom3.png'), alt: 'bathroom twenty-four', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
 
 
-            { id: '57', tag: 'bathroom', src: require('@/assets/images/projects_bathroom5.png'), alt: 'bathroom twenty-five', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '58', tag: 'bathroom', src: require('@/assets/images/projects_bathroom6.png'), alt: 'bathroom twenty-six', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '59', tag: 'bathroom', src: require('@/assets/images/projects_bathroom5.png'), alt: 'bathroom twenty-seven', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '60', tag: 'bathroom', src: require('@/assets/images/projects_bathroom6.png'), alt: 'bathroom twenty-eight', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '61', tag: 'bathroom', src: require('@/assets/images/projects_bathroom6.png'), alt: 'bathroom twenty-nine', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '62', tag: 'bathroom', src: require('@/assets/images/projects_bathroom5.png'), alt: 'bathroom thirty', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '63', tag: 'bathroom', src: require('@/assets/images/projects_bathroom6.png'), alt: 'bathroom thirty-one', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '64', tag: 'bathroom', src: require('@/assets/images/projects_bathroom5.png'), alt: 'bathroom thirty-two', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '57', tag: 'bathroom', src: require('@/assets/images/projects_bathroom6.png'), alt: 'bathroom twenty-five', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '58', tag: 'bathroom', src: require('@/assets/images/projects_bathroom5.png'), alt: 'bathroom twenty-six', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '59', tag: 'bathroom', src: require('@/assets/images/projects_bathroom6.png'), alt: 'bathroom twenty-seven', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '60', tag: 'bathroom', src: require('@/assets/images/projects_bathroom5.png'), alt: 'bathroom twenty-eight', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '61', tag: 'bathroom', src: require('@/assets/images/projects_bathroom5.png'), alt: 'bathroom twenty-nine', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '62', tag: 'bathroom', src: require('@/assets/images/projects_bathroom6.png'), alt: 'bathroom thirty', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '63', tag: 'bathroom', src: require('@/assets/images/projects_bathroom5.png'), alt: 'bathroom thirty-one', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '64', tag: 'bathroom', src: require('@/assets/images/projects_bathroom6.png'), alt: 'bathroom thirty-two', firstparagraph: 'Modern Bathroom', secondparagraph: 'Decor / Artchitecture'},
 
 
             { id: '65', tag: 'kitchen', src: require('@/assets/images/projects_kitchen1.png'), alt: 'kitchen one', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
@@ -112,14 +112,14 @@ export default {
             { id: '88', tag: 'kitchen', src: require('@/assets/images/projects_kitchen3.png'), alt: 'kitchen twenty-four', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
 
 
-            { id: '89', tag: 'kitchen', src: require('@/assets/images/projects_kitchen5.png'), alt: 'kitchen twenty-five', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
-            { id: '90', tag: 'kitchen', src: require('@/assets/images/projects_kitchen6.png'), alt: 'kitchen twenty-six', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
-            { id: '91', tag: 'kitchen', src: require('@/assets/images/projects_kitchen5.png'), alt: 'kitchen twenty-seven', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
-            { id: '92', tag: 'kitchen', src: require('@/assets/images/projects_kitchen6.png'), alt: 'kitchen twenty-eight', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
-            { id: '93', tag: 'kitchen', src: require('@/assets/images/projects_kitchen6.png'), alt: 'kitchen twenty-nine', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
-            { id: '94', tag: 'kitchen', src: require('@/assets/images/projects_kitchen5.png'), alt: 'kitchen thirty', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
-            { id: '95', tag: 'kitchen', src: require('@/assets/images/projects_kitchen6.png'), alt: 'kitchen thirty-one', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
-            { id: '96', tag: 'kitchen', src: require('@/assets/images/projects_kitchen5.png'), alt: 'kitchen thirty-two', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
+            { id: '89', tag: 'kitchen', src: require('@/assets/images/projects_kitchen6.png'), alt: 'kitchen twenty-five', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
+            { id: '90', tag: 'kitchen', src: require('@/assets/images/projects_kitchen5.png'), alt: 'kitchen twenty-six', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
+            { id: '91', tag: 'kitchen', src: require('@/assets/images/projects_kitchen6.png'), alt: 'kitchen twenty-seven', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
+            { id: '92', tag: 'kitchen', src: require('@/assets/images/projects_kitchen5.png'), alt: 'kitchen twenty-eight', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
+            { id: '93', tag: 'kitchen', src: require('@/assets/images/projects_kitchen5.png'), alt: 'kitchen twenty-nine', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
+            { id: '94', tag: 'kitchen', src: require('@/assets/images/projects_kitchen6.png'), alt: 'kitchen thirty', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
+            { id: '95', tag: 'kitchen', src: require('@/assets/images/projects_kitchen5.png'), alt: 'kitchen thirty-one', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
+            { id: '96', tag: 'kitchen', src: require('@/assets/images/projects_kitchen6.png'), alt: 'kitchen thirty-two', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'},
 
 
             { id: '97', tag: 'livingroom', src: require('@/assets/images/projects_livingroom1.png'), alt: 'livingroom one', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
@@ -152,14 +152,14 @@ export default {
             { id: '120', tag: 'livingroom', src: require('@/assets/images/projects_livingroom3.png'), alt: 'livingroom twenty-four', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
 
 
-            { id: '121', tag: 'livingroom', src: require('@/assets/images/projects_livingroom5.png'), alt: 'livingroom twenty-five', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '122', tag: 'livingroom', src: require('@/assets/images/projects_livingroom6.png'), alt: 'livingroom twenty-six', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '123', tag: 'livingroom', src: require('@/assets/images/projects_livingroom5.png'), alt: 'livingroom twenty-seven', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '124', tag: 'livingroom', src: require('@/assets/images/projects_livingroom6.png'), alt: 'livingroom twenty-eight', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '125', tag: 'livingroom', src: require('@/assets/images/projects_livingroom6.png'), alt: 'livingroom twenty-nine', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '126', tag: 'livingroom', src: require('@/assets/images/projects_livingroom5.png'), alt: 'livingroom thirty', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '127', tag: 'livingroom', src: require('@/assets/images/projects_livingroom6.png'), alt: 'livingroom thirty-one', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
-            { id: '128', tag: 'livingroom', src: require('@/assets/images/projects_livingroom5.png'), alt: 'livingroom thirty-two', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'}
+            { id: '121', tag: 'livingroom', src: require('@/assets/images/projects_livingroom6.png'), alt: 'livingroom twenty-five', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '122', tag: 'livingroom', src: require('@/assets/images/projects_livingroom5.png'), alt: 'livingroom twenty-six', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '123', tag: 'livingroom', src: require('@/assets/images/projects_livingroom6.png'), alt: 'livingroom twenty-seven', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '124', tag: 'livingroom', src: require('@/assets/images/projects_livingroom5.png'), alt: 'livingroom twenty-eight', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '125', tag: 'livingroom', src: require('@/assets/images/projects_livingroom5.png'), alt: 'livingroom twenty-nine', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '126', tag: 'livingroom', src: require('@/assets/images/projects_livingroom6.png'), alt: 'livingroom thirty', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '127', tag: 'livingroom', src: require('@/assets/images/projects_livingroom5.png'), alt: 'livingroom thirty-one', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'},
+            { id: '128', tag: 'livingroom', src: require('@/assets/images/projects_livingroom6.png'), alt: 'livingroom thirty-two', firstparagraph: 'Modern Livingroom', secondparagraph: 'Decor / Artchitecture'}
         ],
 
     },
