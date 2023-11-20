@@ -47,7 +47,7 @@
                 <ArticleCard v-for="item in displayedCards" :item="item" />
             </div>
             <Pagination :totalNumberPaginationPages="setTotalNumberOfPages()"
-                :currentPage="currentPage"  @pagechanged="changeCurrentPage" />
+                :currentPage="currentPage" :pageKey="pageKey"   @pagechanged="changeCurrentPage" />
         </div>
     </section>
 </template>
@@ -69,6 +69,7 @@ export default {
         return {
             currentPage: 1,//текущая просматриваемая страница
             limitOfCardsPerPage: 6,//количество карточек будем выводить на текущей странице
+            pageKey: 'blog',
         };
     },
     methods: {

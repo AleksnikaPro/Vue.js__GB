@@ -1090,6 +1090,9 @@ summary::-webkit-details-marker {
   align-items: center;
 }
 .pagination__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 52px;
   height: 52px;
   border: 1px solid #CDA274;
@@ -1102,8 +1105,24 @@ summary::-webkit-details-marker {
   line-height: 1.5;
   text-transform: capitalize;
   transition: all 0.5s ease-out;
+  cursor: pointer;
 }
-.pagination__item_active {
+.pagination__button:hover {
+  background-color: #CDA274;
+  border: 1px solid #CDA274;
+  transition: all 0.5s ease-out;
+}
+.pagination__button-svg {
+  transform: rotate(180deg);
+  transform-origin: 50% 50%;
+}
+.pagination__button_inactive {
+  background-color: #4D5053;
+  border: 1px solid #4D5053;
+  pointer-events: none;
+  cursor: default;
+}
+.pagination__button_active {
   background-color: #F4F0EC;
   border: none;
 }
