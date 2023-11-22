@@ -7,7 +7,6 @@
  */
 html {
   line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -1090,6 +1089,9 @@ summary::-webkit-details-marker {
   align-items: center;
 }
 .pagination__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 52px;
   height: 52px;
   border: 1px solid #CDA274;
@@ -1102,8 +1104,24 @@ summary::-webkit-details-marker {
   line-height: 1.5;
   text-transform: capitalize;
   transition: all 0.5s ease-out;
+  cursor: pointer;
 }
-.pagination__item_active {
+.pagination__button:hover {
+  background-color: #CDA274;
+  border: 1px solid #CDA274;
+  transition: all 0.5s ease-out;
+}
+.pagination__button-svg {
+  transform: rotate(180deg);
+  transform-origin: 50% 50%;
+}
+.pagination__button_inactive {
+  background-color: #4D5053;
+  border: 1px solid #4D5053;
+  pointer-events: none;
+  cursor: default;
+}
+.pagination__button_active {
   background-color: #F4F0EC;
   border: none;
 }
@@ -1183,6 +1201,18 @@ button {
   line-height: 1.5;
   letter-spacing: 0.22px;
   margin: 0;
+}
+.footer__contact-address:hover {
+  color: #CDA274;
+  transition: all 0.8s ease-out;
+}
+.footer__contact-address:active {
+  color: #4D5053;
+  transition: all 0.8s ease-out;
+}
+.footer__contact-address:focus {
+  color: #CDA274;
+  transition: all 0.8s ease-out;
 }
 .footer__contact-email {
   color: #4D5053;

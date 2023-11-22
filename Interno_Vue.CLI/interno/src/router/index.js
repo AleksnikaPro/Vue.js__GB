@@ -14,7 +14,7 @@ const routes = [
     component: HomePage
   },
   {
-    path: '/blog',
+    path: '/blog/:pageNumber?',
     name: 'Blog',
     component: Blog
   },
@@ -24,7 +24,7 @@ const routes = [
     component: BlogDetails
   },
   {
-    path: '/project',
+    path: '/project/:pageNumber?',
     name: 'Project',
     component: Project
   },

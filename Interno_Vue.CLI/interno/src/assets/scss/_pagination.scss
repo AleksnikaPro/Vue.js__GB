@@ -19,14 +19,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        // &:first-child:hover {
-        //     background-color: $mainColorOfSite;
-        //     @include transition-slow();
-        // }
     }
 
     &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 52px;
         height: 52px;
         border: 1px solid $firstPrimaryColor;
@@ -34,13 +32,34 @@
         @include font-jost-semibold($secondPrimaryColor, 16px, 1.5);
         text-transform: capitalize;
         @include transition-fast();
+        cursor: pointer;
+
+        &:hover {
+            background-color: $firstPrimaryColor;
+            border: 1px solid $firstPrimaryColor;
+            @include transition-fast();
+        }
     }
 
-    &__item_active {
+    &__button-svg {
+        transform: rotate(180deg);
+        transform-origin: 50% 50%;
+    }
+
+    &__button_inactive {
+        background-color: $fourthPrimaryColor;
+        border: 1px solid $fourthPrimaryColor;
+        pointer-events: none;
+        cursor: default;
+    }
+
+    &__button_active {
         background-color: $thirdPrimaryColor;
         border: none;
     }
+
 }
+
 button {
     background: none;
     border: none;
