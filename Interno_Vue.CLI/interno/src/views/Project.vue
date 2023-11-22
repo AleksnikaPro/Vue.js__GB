@@ -453,6 +453,7 @@ export default {
         if (category.tag === buttonId) {
           this.buttonIsActive = buttonId;
           this.currentPage = 1;
+          this.$router.push(`/${this.pageKey}/${this.currentPage}`);
           return this.currentCategoryList.push(category);
         }
       });
