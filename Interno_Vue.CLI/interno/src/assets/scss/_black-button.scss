@@ -27,33 +27,22 @@
         text-align: center;
         @include transition-slow();
 
-        &:hover {
-            color: $firstPrimaryColor;
-            background: $mainColorOfSite;
-            border: 1px solid $secondPrimaryColor;
-            @include transition-slow();
-        }
-
+        &:hover,
         &:focus {
-            outline: none !important;
-            fill: $mainColorOfSite;
-        }
+            color: $mainColorOfSite;
+            background: $firstPrimaryColor;
+            border: 1px solid $firstPrimaryColor;
+            @include transition-slow();
 
-        &:active {
-            color: $firstPrimaryColor;
-            background: $mainColorOfSite;
-            border: 1px solid $secondPrimaryColor;
-            @include transition-fast();
-        }
+            .button__arrow path {
+                stroke: #292f36;
+                @include transition-slow();
 
+            }
+        }
     }
 
     &__arrow {
         margin-left: 10px;
-
-        &:hover path {
-            @include transition-slow();
-        }
     }
-
 }

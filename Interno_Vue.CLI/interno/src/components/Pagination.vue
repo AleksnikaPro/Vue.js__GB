@@ -1,4 +1,3 @@
-r
 <template>
   <div class="pagination">
     <ul class="pagination__box">
@@ -125,12 +124,8 @@ export default {
       const range = [];
       for (let i = this.startPage; i <= this.endPage; i += 1) {
         range.push(i);
-        // range.push({
-        //   name: i,
-        //   isDisabled: i === this.currentPage,
-        // });
       }
-      //   console.log(range);
+
       return range;
     },
     isInFirstPage() {
@@ -149,14 +144,16 @@ export default {
     getPageLinkPrev() {
       if (this.currentPage > 1) {
         return `/${this.pageKey}/${this.currentPage - 1}`;
+      } else {
+        return `/${this.pageKey}/1`;
       }
-      return `/${this.pageKey}/1`;
     },
     getPageLinkNext() {
       if (this.currentPage < this.totalNumberPaginationPages) {
         return `/${this.pageKey}/${this.currentPage + 1}`;
+      } else {
+        return `/${this.pageKey}/${this.totalNumberPaginationPages}`;
       }
-      return `/${this.pageKey}/${this.totalNumberPaginationPages}`;
     },
   },
   methods: {

@@ -18,7 +18,6 @@
   </section>
   <div class="projects center">
     <div class="projects__content">
-      <!-- categories -->
       <div class="categories">
         <div class="categories__content">
           <button
@@ -35,7 +34,6 @@
           </button>
         </div>
       </div>
-      <!-- projects -->
       <div class="projects__items">
         <div
           v-for="project in displayedCards"
@@ -433,7 +431,6 @@ export default {
   },
   methods: {
     setTotalNumberOfPages() {
-      //вычисляем общее кол-во страниц
       return Math.ceil(
         this.currentCategoryList.length / this.limitOfCardsPerPage
       );
@@ -450,6 +447,9 @@ export default {
     changeCurrentPage(page) {
       console.log(page);
       this.currentPage = page;
+      this.$router.push(
+        `/${this.pageKey}/${this.currentPage}/${this.buttonIsActive}`
+      );
     },
     changeCurrentCategoryList(id) {
       const buttonId = id;
@@ -457,6 +457,10 @@ export default {
       this.getAllCategoriesList.forEach((category) => {
         if (category.tag === buttonId) {
           this.buttonIsActive = buttonId;
+          this.currentPage = 1;
+          this.$router.push(
+            `/${this.pageKey}/${this.currentPage}/${this.buttonIsActive}`
+          );
           return this.currentCategoryList.push(category);
         }
       });

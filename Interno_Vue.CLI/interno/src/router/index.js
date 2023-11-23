@@ -19,12 +19,12 @@ const routes = [
     component: Blog
   },
   {
-    path: '/blogdetails',
+    path: '/blogdetails/:tag?',
     name: 'BlogDetails',
     component: BlogDetails
   },
   {
-    path: '/project/:pageNumber?',
+    path: '/project/:pageNumber?/:category?',
     name: 'Project',
     component: Project
   },
