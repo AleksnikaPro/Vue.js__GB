@@ -112,7 +112,6 @@
             </div>
             <router-link
               to="/projectdetails"
-              href="#"
               class="projects__item-button"
             >
               <svg

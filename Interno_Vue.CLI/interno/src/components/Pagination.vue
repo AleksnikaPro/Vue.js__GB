@@ -34,7 +34,7 @@ r
           :to="getPageLink"
           :class="{ pagination__button_active: isPageActive(page) }"
           class="pagination__button"
-          :disabled="this.currentPage"
+          :disabled="page"
         >
           0{{ page }}
         </router-link>
