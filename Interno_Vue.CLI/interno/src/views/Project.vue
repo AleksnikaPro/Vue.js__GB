@@ -444,7 +444,9 @@ export default {
     changeCurrentPage(page) {
       console.log(page);
       this.currentPage = page;
-      this.$router.push(`/${this.pageKey}/${this.currentPage}`);
+      this.$router.push(
+        `/${this.pageKey}/${this.currentPage}/${this.buttonIsActive}`
+      );
     },
     changeCurrentCategoryList(id) {
       const buttonId = id;
@@ -453,7 +455,9 @@ export default {
         if (category.tag === buttonId) {
           this.buttonIsActive = buttonId;
           this.currentPage = 1;
-          this.$router.push(`/${this.pageKey}/${this.currentPage}`);
+          this.$router.push(
+            `/${this.pageKey}/${this.currentPage}/${this.buttonIsActive}`
+          );
           return this.currentCategoryList.push(category);
         }
       });

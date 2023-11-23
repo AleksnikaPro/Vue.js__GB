@@ -144,14 +144,16 @@ export default {
     getPageLinkPrev() {
       if (this.currentPage > 1) {
         return `/${this.pageKey}/${this.currentPage - 1}`;
+      } else {
+        return `/${this.pageKey}/1`;
       }
-      return `/${this.pageKey}/1`;
     },
     getPageLinkNext() {
       if (this.currentPage < this.totalNumberPaginationPages) {
         return `/${this.pageKey}/${this.currentPage + 1}`;
+      } else {
+        return `/${this.pageKey}/${this.totalNumberPaginationPages}`;
       }
-      return `/${this.pageKey}/${this.totalNumberPaginationPages}`;
     },
   },
   methods: {
